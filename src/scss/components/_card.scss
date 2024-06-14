@@ -1,0 +1,63 @@
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 30px;
+	background-color: $color-gray-light;
+	border-radius: 16px;
+
+	&__date {
+		margin-bottom: 8px;
+		font-size: 16px;
+		line-height: 22px;
+		color: $color-gray-dark;
+	}
+
+	&__title {
+		margin-bottom: 8px;
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 700;
+		letter-spacing: -.01em;
+	}
+
+	&__text {
+	}
+
+	&__img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	&__button {
+		margin-top: auto;
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 4px;
+		padding: 8px 24px;
+		border: 1px solid $color-accent;
+		border-radius: 90px;
+		background: unset;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 400;
+		text-align: center;
+		color: $color-accent;
+		white-space: nowrap;
+		transition: color $transition-default, background-color $transition-default;
+
+		.card:hover & {
+			background-color: $color-accent;
+			color: $color-white;
+		}
+	}
+
+	&__button-chevron {
+		width: 6px;
+		height: 10px;
+	}
+}

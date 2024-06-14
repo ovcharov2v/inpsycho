@@ -1,0 +1,70 @@
+.help-form {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 38px 30px 38px 100px;
+	border: 1px solid $color-gray;
+	border-radius: 16px;
+	overflow: hidden;
+
+	&__img {
+		position: absolute;
+		display: block;
+		width: 50%;
+		top: 50%;
+		left: 0;
+		transform: translateX(-50%);
+		opacity: .04;
+	}
+
+	&__text-box {
+		width: 100%;
+		max-width: 620px;
+	}
+
+	&__title {
+		position: relative;
+		margin-bottom: 32px;
+		font-size: 32px;
+		line-height: 40px;
+		font-weight: 700;
+
+		&::before {
+			position: absolute;
+			top: 15px;
+			right: calc(100% + 20px);
+			width: 160px;
+			height: 4px;
+			background-color: $color-accent;
+			border-radius: 4px;
+			content: "";
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	&__input-box {
+		width: 100%;
+		max-width: 374px;
+	}
+
+	&__input {
+		width: 100%;
+		margin-bottom: 8px;
+	}
+
+	&__button {
+		width: 100%;
+		margin: 16px 0 12px;
+	}
+
+	&__agreement {
+		font-size: 8px;
+		line-height: 11px;
+		color: $color-gray-dark;
+		text-align: center;
+	}
+}

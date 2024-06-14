@@ -1,0 +1,14 @@
+mixin helpForm()
+	// Help form
+	.container
+		section.help-form
+			img.help-form__img(src="./images/help-form/bg.png", alt)
+			.help-form__text-box
+				h2.help-form__title Поможем подобрать образовательную программу
+				p.help-form__text Если у вас есть вопросы о формате  или вы не знаете, что выбрать, оставьте свой номер — мы позвоним, чтобы ответить на все ваши вопросы.
+			form.help-form__input-box
+				input.input.help-form__input(type="text", placeholder="Имя")
+				input.input.help-form__input(type="email", placeholder="Электронная почта")
+				input.input.help-form__input(type="tel", placeholder="Телефон")
+				button.button.button--red.help-form__button(type="submit") Отправить
+				p.help-form__agreement Нажимая кнопку «Отправить» я подтверждаю, что ознакомился с Политикой конфиденциальности и Правилами обработки персональных данных

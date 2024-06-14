@@ -1,0 +1,15 @@
+mixin cardDirection(date, title, img)
+	a.card(href="direction.html")
+		img.card__img(src="./images/card/" + img + ".png", alt="" + title)
+		time.card__date= date
+		h3.card__title= title
+		button.card__button Подробнее
+			+svg("chevron-right")(class="card__button-chevron")
+
+mixin cardProfile(title, text, img)
+	a.card(href="profile.html")
+		img.card__img(src="./images/card/" + img + ".png", alt="" + title)
+		h3.card__title= title
+		p.card__text= text
+		button.card__button Подробнее
+			+svg("chevron-right")(class="card__button-chevron")

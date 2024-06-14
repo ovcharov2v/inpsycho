@@ -1,0 +1,21 @@
+.input {
+	display: block;
+	min-width: 0;
+	padding: 14px 20px;
+	font-size: 16px;
+	line-height: 22px;
+	border: 1px solid $color-gray-light;
+	border-radius: 8px;
+	transition: border-color $transition-default, color $transition-default;
+
+	&::placeholder {
+		color: $color-gray-dark;
+		opacity: 1;
+	}
+
+	&:focus {
+		outline: none;
+		border-color: $color-black;
+		color: $color-black;
+	}
+}

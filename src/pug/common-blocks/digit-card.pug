@@ -1,0 +1,7 @@
+mixin digitCard(value, text, icon)
+	// Digit card
+	.digit-card&attributes(attributes)
+		.digit-card__top
+			img.digit-card__icon(src="./images/section-digits/"+icon+".svg", alt="")
+			span.digit-card__value= value
+		p.digit-card__text= text

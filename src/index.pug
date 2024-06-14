@@ -7,4 +7,59 @@ append vars
 	- title = "Главная"
 
 block content
-	h1 Inpsycho
+	// Section VO
+	section.section-vo.container
+		h1.heading1 Высшее образование
+		.tabs
+			.tabs__controls
+				button.tabs__control(data-tab='1') Бакалавриат
+				button.tabs__control(data-tab='2') Специалитет
+				button.tabs__control(data-tab='3') Магистратура
+				button.tabs__control(data-tab='4') Аспирантура
+			.tabs__content
+				// Pane
+				.tabs__pane(data-tab='1')
+					.tabs__pane-row.tabs__pane-row--col3
+						+cardDirection("37.03.01 Психологические науки","Психология","img1")
+						+cardDirection("37.03.01 Психологические науки","Управление персоналом","img2")
+						+cardDirection("37.03.01 Психологические науки","Психолого-педагогическое образование","img3")
+						+cardDirection("37.03.01 Психологические науки","Специальное дефектологическое образование","img4")
+						+cardDirection("37.03.01 Психологические науки","Науки о жизни","img5")
+				// Pane
+				.tabs__pane(data-tab='2')
+					.tabs__pane-row.tabs__pane-row--col3
+						+cardDirection("37.03.01 Психологические науки","Психология","img1")
+						+cardDirection("37.03.01 Психологические науки","Управление персоналом","img2")
+						+cardDirection("37.03.01 Психологические науки","Психолого-педагогическое образование","img3")
+				// Pane
+				.tabs__pane(data-tab='3')
+					.tabs__pane-row.tabs__pane-row--col3
+						+cardDirection("37.03.01 Психологические науки","Специальное дефектологическое образование","img4")
+						+cardDirection("37.03.01 Психологические науки","Науки о жизни","img5")
+				// Pane
+				.tabs__pane(data-tab='4')
+					.tabs__pane-row.tabs__pane-row--col3
+						+cardDirection("37.03.01 Психологические науки","Управление персоналом","img2")
+						+cardDirection("37.03.01 Психологические науки","Психолого-педагогическое образование","img3")
+						+cardDirection("37.03.01 Психологические науки","Специальное дефектологическое образование","img4")
+
+	+helpForm()
+
+	// Section Digits
+	section.section-digits.container
+		h2.heading2.section-digits__title Институт в цифрах
+		.section-digits__row
+			.section-digits__card-col
+				+digitCard("8 000","Студентов из разных городов России","icon1")(class="section-digits__card")
+			.section-digits__card-col
+				+digitCard("2 500","Часов мультимедийного контента","icon2")(class="section-digits__card")
+			.section-digits__card-col
+				+digitCard("350","Профессиональных преподавателй","icon3")(class="section-digits__card")
+			.section-digits__card-col
+				+digitCard("2 700+","Проведенных открытых мероприятий","icon4")(class="section-digits__card")
+			.section-digits__card-col.section-digits__card-col--wide
+				+digitCard("48","Научных проектов, Поддержанных рффи, рнф, Президентом рф и фадм","icon5")(class="section-digits__card")
+			.section-digits__card-col.section-digits__card-col--wide
+				+digitCard("7 000","Слушателей программ дополнительного образования","icon6")(class="section-digits__card")
+			.section-digits__card-col.section-digits__card-col--wide
+				+digitCard("263 000+","Подписчиков  в социальных сетях","icon7")(class="section-digits__card")

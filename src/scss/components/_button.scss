@@ -1,10 +1,29 @@
 .button {
 	position: relative;
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 24px;
+	border: 1px solid;
+	border-radius: 8px;
+	background: unset;
+	font-size: 16px;
+	line-height: 22px;
 	text-align: center;
 	white-space: nowrap;
-	transition: color $transition-default, background-color $transition-default;
+	transition: color $transition-default, background-color $transition-default, border-color $transition-default;
 
 	&:hover {
+	}
+
+	&--red {
+		border-color: $color-accent;
+		background-color: $color-accent;
+		color: $color-white;
+	}
+
+	&--outline-red {
+		border-color: $color-accent;
+		color: $color-accent;
 	}
 }
